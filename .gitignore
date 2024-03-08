@@ -1,0 +1,5 @@
+certs/ca.crt
+certs/client.crt
+certs/client.key
+certs/vpn-ca.crt
+certs/vpn.conf

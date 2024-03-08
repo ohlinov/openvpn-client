@@ -1,0 +1,1 @@
+In this folder you should place certs to VPN Service

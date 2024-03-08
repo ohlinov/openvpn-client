@@ -1,10 +1,9 @@
-FROM alpine
-MAINTAINER David Personette <dperson@gmail.com>
+FROM alpine:3.19.1
 
 # Install openvpn
 RUN apk --no-cache --no-progress upgrade && \
     apk --no-cache --no-progress add bash curl ip6tables iptables openvpn \
-                shadow tini tzdata && \
+                shadow-login shadow tini tzdata && \
     addgroup -S vpn && \
     rm -rf /tmp/*
 
